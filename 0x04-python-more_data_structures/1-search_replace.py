@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
-    if idx < 0 or idx > (len(my_list) - 1):
-        return None
-    return (my_list[idx])
+def search_replace(my_list, search, replace):
+    new_list = []
+    for i in my_list:
+        if i != search:
+            new_list.append(i)
+        else:
+            new_list.append(replace)
+    return new_list
