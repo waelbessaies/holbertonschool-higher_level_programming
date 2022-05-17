@@ -5,6 +5,7 @@
 class Square:
     """Square class
     Attributes: size (int): size of the squre """
+
     def __init__(self, size=0, position=(0, 0)):
         """size initialization
         position initialization"""
