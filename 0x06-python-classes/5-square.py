@@ -30,13 +30,16 @@ class Square:
         if value < 0:
             raise ValueError('size must be >= 0')
         self.__size = value
-
-
-def my_print(self):
-    """print the Square with hachtag charachter"""
-    for i in range(self.__size):
-        for a in range(self.__size):
-            print("#", end="")
-        print("")
-    if self.__size == 0:
-        print("")
+  def my_print(self):
+        """
+        print a square from the size using ##
+        Returns:
+            None
+        """
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(1, self.__size + 1):
+                for j in range(1, self.__size + 1):
+                    print("#", end="")
+                print()
