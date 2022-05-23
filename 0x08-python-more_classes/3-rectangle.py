@@ -1,64 +1,64 @@
 #!/usr/bin/python3
-"""a python program that defines a rectangle"""
+""" Defining a class: Rectangle """
 
 
-class Rectangle():
-    """ empty class rectangle"""
+class Rectangle:
+    """ Rectangle: class
+    """
 
     def __init__(self, width=0, height=0):
-        """ the function arguments"""
-        self.__width = width
-        self.__height = height
+        """ Initializing Rectangle
+        """
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
-        """width property """
-        return(self.__width)
+        """ Retrieve width """
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """ width setter"""
+        """ Set the width value """
         if type(value) is not int:
-            raise(TypeError("width must be an integer"))
+            raise TypeError("width must be an integer")
         if value < 0:
-            raise(ValueError("width must be >= 0"))
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
     def height(self):
-        """height property"""
-        return(self.__height)
+        """ Retrieve height value """
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """height setter """
+        """ Set the height value """
         if type(value) is not int:
-            raise(TypeError("height must be an integer"))
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise(ValueError("height must be >= 0"))
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        """ return the rectangle area"""
-        return self.__height * self.__width
+        """ Class Method that calculates the Area of the rectangle
+        Return:
+            The area of the rectangle
+        """
+        return self.__width * self.__height
 
     def perimeter(self):
-        """return the rectangle perimiter"""
-        if self.width == 0 or self.height == 0:
+        """ Class Method that calculates the perimeter of the rectangle
+        Return:
+            The perimeter of the rectangle"""
+        if self.__width == 0 or self.__height == 0:
             return 0
-        return 2*(self.__height + self.__width)
+        return (self.__height + self.__width) * 2
 
-     def __str__(self):
-        """
-        print a rectangle
-        """
-        str = ""
-        if (self.__height == 0) or (self.__width == 0):
-            return ("")
-        else:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    str += "#"
-                if i < self.__height - 1:
-                    str += "\n"
-            return (str)
+
+      def __str__(self):
+        """ print the rectangle  with the charchter '#' """
+         str = ""
+        if self.__width == 0 or self.__height == 0:
+        return '\n'.join('#' * self.width for _ in range(self.height))
+          return str
