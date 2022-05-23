@@ -55,10 +55,10 @@ class Rectangle:
             return 0
         return (self.__height + self.__width) * 2
 
-    def __str__(self):
-        """return print of the rectangle"""
-        string = ""
-        if self.__width == 0 and self.__height == 0:
-            string += "\n".join("#" * self.__width
-                                for j in range(self.__height))
-        return string
+      def __str__(self):
+        """print #"""
+        a = ''
+        if self.__width == 0 or self.__height == 0:
+            return a
+        a = (('#' * self.__width) + '\n') * (self.__height - 1)
+        return a
