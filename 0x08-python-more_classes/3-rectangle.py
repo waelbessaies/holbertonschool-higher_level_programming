@@ -53,14 +53,12 @@ class Rectangle():
             Return:
                 Printed rectangle with # character
         """
-     def __str__(self):
-     str = ""
-        if (self.__height == 0) or (self.__width == 0):
-            return ("")
-        else:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    str += "#"
-                if i < self.__height - 1:
-                    str += "\n"
-            return (str)
+      str = ""
+        if self.__width == 0 or self.__height == 0:
+            return str
+        for i in range(self.__height):
+            for j in range(self.__width):
+                str += '#'
+            if i is not (self.__height - 1):
+                str += "\n"
+        return str
