@@ -4,15 +4,22 @@
 
 class Rectangle:
     """ Rectangle: class
+    Attributes:
+        width (int): Private attribute
+        height (int): Private attribute
     """
 
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """ Initializing Rectangle
+        Args:
+            width (int): The rectable width
+            height (int): The rectangle height
         """
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
