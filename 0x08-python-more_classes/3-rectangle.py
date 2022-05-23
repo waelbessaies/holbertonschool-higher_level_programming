@@ -56,9 +56,9 @@ class Rectangle:
         return (self.__height + self.__width) * 2
 
     def __str__(self):
-        """return a  rectangle"""
-        string = ""
-        if self.__width != 0 and self.__height != 0:
-            string += "\n".join("#" * self.__width
-                                for j in range(self.__height))
-        return string
+        """
+        print the rectangle with # character
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        return (("#"*self.__width + "\n")*self.height)[:-1]
