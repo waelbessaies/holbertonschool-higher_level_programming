@@ -53,3 +53,6 @@ class Rectangle():
         str = ""
         if self.__height == 0 or self.__width == 0:
             return str
+          else:
+        str ="#"
+            return (self.__height )
