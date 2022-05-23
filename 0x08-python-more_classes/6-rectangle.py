@@ -76,4 +76,5 @@ class Rectangle:
 
     def __del__(self):
         """ Delet instance and prints message"""
+        Rectangle.number_of_instances -= 1
         print('Bye rectangle...')
