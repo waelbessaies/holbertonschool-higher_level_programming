@@ -25,8 +25,8 @@ all possible tests:
     [1, 4, 2, 3, 5]
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
-    >>> my_list = MyList("Jaafar")
+    >>> my_list = MyList("waaeal")
     >>> my_list
-    ['J', 'a', 'a', 'f', 'a', 'r']
+    ['w', 'a', 'a', 'e', 'a', 'l']
     >>> my_list.print_sorted()
-    ['J', 'a', 'a', 'a', 'f', 'r']
+    ['w', 'a', 'a', 'a', 'e', 'l']
