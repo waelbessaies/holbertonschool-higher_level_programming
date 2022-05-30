@@ -3,7 +3,6 @@
 
 
 class MyInt(int):
-    
 
     def __eq__(self, value):
         ''' the inverted operator !='''
