@@ -28,3 +28,5 @@ all possible tests:
     >>> my_list = MyList("wael")
     >>> my_list
     ['w', 'a', 'e', 'l']
+    >>> print(my_list)
+    ['w', 'a', 'e', 'l']
