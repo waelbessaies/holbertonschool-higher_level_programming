@@ -28,5 +28,4 @@ all possible tests:
     >>> my_list = MyList("waaeal")
     >>> my_list
     ['w', 'a', 'a', 'e', 'a', 'l']
-    >>> my_list.print_sorted()
-    ['w', 'a', 'a', 'a', 'e', 'l']
+    
