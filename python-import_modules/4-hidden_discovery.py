@@ -5,3 +5,4 @@ if __name__ == "__main__":
     for i in hidden:
         if "__" not in i:
             print(i)
+            
