@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    print('\n'.join([''.join(['{:4}'.format(item) for item in row]) 
-      for row in A]))
+    for row in matrix:
+        print(" ".join(f"{element}" for element in row))
