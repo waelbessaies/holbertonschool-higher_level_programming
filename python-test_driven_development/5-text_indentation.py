@@ -6,7 +6,7 @@ Task 5
 
 def text_indentation(text):
     '''
-    Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
+    Write a function that prints a text with 2 new lines after
     '''
     if type(text) is not str:
         raise TypeError("text must be a string")
