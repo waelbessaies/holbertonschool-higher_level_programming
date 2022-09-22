@@ -8,7 +8,7 @@ class Rectangle:
     """
     empty class Square that defines a Rectangle.
     """
-    print_symbol = #
+    print_symbol = '#'
     number_of_instances = 0
 
 
