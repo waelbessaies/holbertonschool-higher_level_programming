@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
- class that create a Square
+ class that create a Rectangle
 """
 
 
-class Square:
+class Rectangle:
     """
-    empty class Square that defines a square
+    empty class Square that defines a Rectangle
     """
     pass
