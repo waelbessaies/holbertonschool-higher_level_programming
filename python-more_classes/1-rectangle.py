@@ -11,9 +11,6 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """ Initializing Rectangle
-        Args:
-            width (int): The rectable width
-            height (int): The rectangle height
         """
         self.height = height
         self.width = width
