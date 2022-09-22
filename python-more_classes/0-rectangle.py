@@ -6,6 +6,6 @@
 
 class Rectangle:
     """
-    empty class Square that defines a Rectangle
+    empty class Square that defines a Rectangle.
     """
     pass
