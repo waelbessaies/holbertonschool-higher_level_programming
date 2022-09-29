@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""task 1"""
+
+"""Defines an inherited list class MyList."""
 
 
 class MyList(list):
-    """this a cllass"""
+    """this is a class"""
+
     def print_sorted(self):
-        '''Write a class MyList that inherits from list:'''
+        """Print a list in sorted """
         print(sorted(self))
