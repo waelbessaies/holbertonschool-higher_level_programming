@@ -4,12 +4,10 @@ that appends a string to a text file """
 
 
 def write_file(filename="", text=""):
-    """writes a string to a text file and return the number of characters
-    args:
-        filename: the name of the textfile
-        text: the string to be inserted in the textfile
-    return:
-         number of char written into the textfile"""
+    """
+    A function that appends a string to the end of a text file
+    and returns the number of characters added
+    """
     with open(filename, "a", encoding="utf-8") as file:
         file.write(text)
     return len(text)
