@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" a function that open  a file and write a text in it """
+"""  a module that representes a function
+that appends a string to a text file """
 
 
 def write_file(filename="", text=""):
