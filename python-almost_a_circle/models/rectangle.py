@@ -83,7 +83,7 @@ class Rectangle(Base):
             self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """args"""
+        """update Rectangle with value of args"""
         if len(args) > 0:
             for i in range(len(args)):
                 if i == 0:
