@@ -70,7 +70,7 @@ class Rectangle:
             return my_str
         for i in range(self.__height):
             for j in range(self.__width):
-                my_str += '#'
+                my_str += str(self.print_symbol)
             if i is not (self.__height - 1):
                 my_str += "\n"
         return my_str
