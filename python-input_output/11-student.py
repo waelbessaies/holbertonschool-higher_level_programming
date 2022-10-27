@@ -19,3 +19,7 @@ class Student:
             if i in self.__dict__:
                 dic[i] = self.__dict__[i]
         return dic
+    def reload_from_json(self, json):
+        '''This is a method'''
+        for i, j in json.items():
+            setattr(self, i, j)
