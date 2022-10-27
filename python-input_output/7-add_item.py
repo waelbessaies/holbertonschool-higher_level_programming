@@ -11,7 +11,7 @@ except FileNotFoundError:
     new_list = []
 
 i = 1
-if  len(argv) >0  != 1:
+if len(argv) > 0 != 1:
     while i < len(argv):
         new_list.append(argv[i])
         i += 1
