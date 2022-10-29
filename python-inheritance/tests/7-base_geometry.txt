@@ -1,0 +1,22 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+>>> a = BaseGeometry()
+>>> a.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> a = BaseGeometry()
+>>> a.integer_validator("Height", "not a number")
+Traceback (most recent call last):
+TypeError: Height must be an integer
+>>> a = BaseGeometry()
+>>> an.integer_validator("Height", -50)
+Traceback (most recent call last):
+ValueError: Height must be greater than 0
+>>> a.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> a.integer_validator("me")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
