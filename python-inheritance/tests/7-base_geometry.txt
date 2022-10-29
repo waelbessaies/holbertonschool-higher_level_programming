@@ -34,8 +34,14 @@ Traceback (most recent call last):
 ValueError: hi must be greater than 0
 >>> a.integer_validator("yo", 1)
 >>> a.integer_validator("yo", [3])
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+File "/root/holbertonschool-higher_level_programming/python-inheritance/7-base_geometry.py", line 15, in integer_validator
 raise TypeError(f"{name} must be an integer")
 TypeError: yo must be an integer
 >>> a.integer_validator("yo", (4,))
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+File "/root/holbertonschool-higher_level_programming/python-inheritance/7-base_geometry.py", line 15, in integer_validator
 raise TypeError(f"{name} must be an integer")
 TypeError: yo must be an integer
