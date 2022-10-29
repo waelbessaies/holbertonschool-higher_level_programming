@@ -32,5 +32,5 @@ TypeError: yo must be an integer
 >>> a.integer_validator("hi", 0)
 Traceback (most recent call last):
 ValueError: hi must be greater than 0
->>>a.integer_validator("yo", 1)
+>>> a.integer_validator("yo", 1)
 
