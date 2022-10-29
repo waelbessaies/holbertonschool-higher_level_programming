@@ -20,3 +20,15 @@ TypeError: integer_validator() missing 2 required positional arguments: 'name' a
 >>> a.integer_validator("me")
 Traceback (most recent call last):
 TypeError: integer_validator() missing 1 required positional argument: 'value'
+>>> a.integer_validator("me", True)
+Traceback (most recent call last):
+TypeError: me must be an integer
+>>> a.integer_validator("me", None)
+Traceback (most recent call last):
+TypeError: me must be an integer
+>>> a.integer_validator("yo", {3, 4})
+Traceback (most recent call last):
+TypeError: yo must be an integer
+>>> a.integer_validator("hi", 0)
+Traceback (most recent call last):
+ValueError: hi must be greater than 0
