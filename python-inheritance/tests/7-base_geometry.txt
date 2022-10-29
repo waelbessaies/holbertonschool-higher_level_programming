@@ -33,9 +33,3 @@ TypeError: yo must be an integer
 Traceback (most recent call last):
 ValueError: hi must be greater than 0
 >>> a.integer_validator("yo", 1)
-
-a.integer_validator("yo", (4,))
-TypeError: yo must be an integer
-
->>> a.integer_validator("yo",[3])
-TypeError: yo must be an integer
