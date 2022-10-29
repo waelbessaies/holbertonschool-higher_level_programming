@@ -32,3 +32,9 @@ TypeError: yo must be an integer
 >>> a.integer_validator("hi", 0)
 Traceback (most recent call last):
 ValueError: hi must be greater than 0
+ >>> a.integer_validator("boo", (4,))
+Traceback (most recent call last):
+TypeError: boo must be an integer
+>>> a.integer_validator("one", [2])
+Traceback (most recent call last):
+TypeError: one must be an integer
