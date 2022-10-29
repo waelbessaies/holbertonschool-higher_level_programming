@@ -7,6 +7,11 @@ Traceback (most recent call last):
 Exception: area() is not implemented
 
 >>> a = BaseGeometry()
+>>> a.integer_validator("yo", 1)
+a.integer_validator("yo", (4,))
+TypeError: yo must be an integer
+>>> a.integer_validator("yo",[3])
+TypeError: yo must be an integer
 >>> a.integer_validator("Height", "not a number")
 Traceback (most recent call last):
 TypeError: Height must be an integer
@@ -32,8 +37,3 @@ TypeError: yo must be an integer
 >>> a.integer_validator("hi", 0)
 Traceback (most recent call last):
 ValueError: hi must be greater than 0
->>> a.integer_validator("yo", 1)
-a.integer_validator("yo", (4,))
-TypeError: yo must be an integer
->>> a.integer_validator("yo",[3])
-TypeError: yo must be an integer
