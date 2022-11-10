@@ -13,7 +13,7 @@ if __name__ == "__main__":
         databse=argv[3])
     cursor = databse.cursor()
     cursor.execute("SELECT * FROM states")
-    for i in cursorfetchall():
+    for i in cursor.fetchall():
         print(i)
     cursor.close()
     databse.close()
