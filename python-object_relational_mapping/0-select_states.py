@@ -4,11 +4,12 @@ from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
-   database = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],database=sys.argv[3])
-    cur =database.cursor()
-    cur.execute("SELECT * FROM states")
-    for i in cur.fetchall():
-        print(i)
+    database = MySQLdb.connect(
+        user=sys.argv[1], passwd=sys.argv[2], database=sys.argv[3])
+     cur = database.cursor()
+      cur.execute("SELECT * FROM states")
+       for i in cur.fetchall():
+            print(i)
 
-    cur.close()
-   database.close()
+        cur.close()
+    database.close()
