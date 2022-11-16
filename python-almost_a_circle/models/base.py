@@ -53,6 +53,7 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
     @classmethod
     def load_from_file(cls):
         """Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances
@@ -66,4 +67,4 @@ class Base:
                     total.append(cls.create(**dictionary))
                 return total
         except:
-            return total  
+            return total
