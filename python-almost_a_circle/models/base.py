@@ -56,7 +56,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances
+        """Update the class Base by adding the class method
         """
         filename = cls.__name__ + ".json"
         total = []
