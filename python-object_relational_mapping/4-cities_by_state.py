@@ -15,8 +15,9 @@ if __name__ == '__main__':
         INNER JOIN states
         ON cities.state_id = states.id
         ORDER BY id """
+    )
 
-    query_rows=cursor.fetchall()
+    query_rows = cursor.fetchall()
     for row in query_rows:
         print(row)
     cursor.close()
