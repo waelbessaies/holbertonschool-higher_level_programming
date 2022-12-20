@@ -1,3 +1,3 @@
-$.get('https://stefanbohacek.com/hellosalut/?lang=f', function (data) {
+$.get('https://stefanbohacek.com/hellosalut/?lang=fr', function (data) {
   $('DIV#hello').html(data.hello);
 });
